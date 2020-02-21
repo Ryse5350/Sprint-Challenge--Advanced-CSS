@@ -1,1 +1,50 @@
 // Navigation code here
+div.navi {
+    width: 100vw;
+    background-color: whitesmoke;
+
+    div.header-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        div.main-head {
+            padding: 1rem;
+        }
+    
+        nav {
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 1rem;
+
+            @media @mobile {
+                width: 90%;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+div.head-img {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    
+    img {
+        width: 100%;
+        border-radius: 20px;
+
+        @media @mobile {
+            border-radius: 5px;
+        }
+    }
+}
