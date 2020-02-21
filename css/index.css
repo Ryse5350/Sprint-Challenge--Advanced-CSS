@@ -292,6 +292,23 @@ footer {
   width: 33%;
   text-align: center;
   border-radius: 10px;
+  border: 2px solid #22283A;
+}
+@keyframes btn-anim {
+  from {
+    background-color: #22283A;
+    color: white;
+  }
+  to {
+    background-color: white;
+    color: #22283A;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
+  cursor: pointer;
+  animation: btn-anim 0.5s;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {

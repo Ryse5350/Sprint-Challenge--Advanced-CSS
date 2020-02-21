@@ -1,1 +1,34 @@
 // Mixins Here
+.button(@font-color){
+    background-color: @btn-bg-color;
+    color: @font-color;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 33%;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid @btn-bg-color;
+
+    @keyframes btn-anim {
+        from {
+          background-color: @btn-bg-color;
+          color: @font-color;
+        }
+        to {
+          background-color: @font-color;
+          color: @btn-bg-color;
+        }
+      }
+
+    &:hover {
+        background-color: @font-color;
+        color: @btn-bg-color;
+        cursor: pointer;
+        animation: btn-anim 0.5s;
+    }
+
+    @media @mobile {
+        width: 100%;
+        padding: 2rem;
+    }
+}
